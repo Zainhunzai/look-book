@@ -3,24 +3,24 @@ import Image from "next/image"
 
 export default function BookingSale() {
   return (
-    <main className="w-full bg-white mx-auto">
+    <main className="w-full bg-white mx-auto px-4 lg:px-0">
       {/* Hero Section */}
       <section className="relative container max-w-7xl bg-purple-tertiary mx-auto px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-12 overflow-hidden rounded-2xl sm:rounded-3xl md:rounded-[32px] backdrop-blur-[41.5px]">
 
         {/* Content */}
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
+        <div className="relative z-10 text-center max-w-4xl mx-auto pb-20 lg:pb-0">
           {/* Thumbs up icon */}
           <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <span className="text-4xl sm:text-5xl md:text-6xl">👍</span>
+            <span className="text-7xl md:text-6xl">👍</span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-dm-sans leading-tight sm:leading-snug md:leading-16 font-extrabold text-white mb-3 sm:mb-4 text-pretty px-2">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[56px] font-dm-sans leading-tight sm:leading-snug md:leading-16 font-extrabold text-white mb-3 sm:mb-4 text-pretty px-2">
             50% OFF on First Booking
           </h1>
 
           {/* Subheading */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium font-dm-sans leading-5 sm:leading-6 md:leading-7 text-purple-100 mb-6 sm:mb-7 md:mb-8 px-2">
+          <p className="text-base md:text-lg lg:text-xl xl:text-2xl font-medium font-dm-sans leading-5 sm:leading-6 md:leading-7 text-purple-100 mb-6 sm:mb-7 md:mb-8 px-2">
             Our AI-powered app makes finding and booking salon services effortless
           </p>
 
@@ -67,11 +67,11 @@ export default function BookingSale() {
           </div>
         </div>
 
-        <div className="hidden sm:block">
-          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute -bottom-13 right-0 z-40" />
-          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute top-0 left-0 z-30 rotate-180" />
+        <div className="block">
+          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute -bottom-13 right-0 z-40 hidden lg:block" />
+          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute top-0 left-0 z-30 rotate-180 hidden lg:block" />
           <Image src="/Star.svg" alt="Booking Sale" width={16} height={16} className="absolute top-6 left-6 sm:top-8 sm:left-8 md:top-10 md:left-10 w-4 h-4 sm:w-5 sm:h-5" />
-          <Image src="/graphics-elements.svg" alt="Booking Sale" width={203} height={183} className="absolute bottom-20 right-15" />
+          <Image src="/graphics-elements.svg" alt="Booking Sale" width={203} height={183} className="absolute -bottom-20 right-0 md:bottom-20 md::right-15" />
           <Image src="/triangle.svg" alt="Booking Sale" width={12} height={12} className="absolute bottom-16 left-20 sm:bottom-20 sm:left-32 md:bottom-20 md:left-50 w-3 h-3 sm:w-3.5 sm:h-3.5" />
         </div>
       </section>

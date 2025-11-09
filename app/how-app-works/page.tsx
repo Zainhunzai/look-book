@@ -351,7 +351,7 @@ export default function Page() {
               type="submit"
               disabled={isSubmitting}
               variant="outline"
-              className="px-6 py-6 cursor-pointer w-full gap-10 font-semibold text-lg font-rethink-sans text-white hover:text-white"
+              className="px-6 py-3 cursor-pointer w-full gap-10 font-semibold text-lg font-rethink-sans text-white hover:text-white"
               style={{
                 borderRadius: '16px',
                 border: '1px solid var(--Temp-UntitledStyle, #000)',

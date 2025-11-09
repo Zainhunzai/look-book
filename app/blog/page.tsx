@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
+import ReadyForBooking from "@/components/ready-for-booking"
 
 const resourcesData = [
     {
@@ -157,7 +158,7 @@ export default function ResourcesPage() {
     const remainingCount = resourcesData.length - initialCount
 
     return (
-        <main className="min-h-screen relative">
+        <main className="relative overflow-hidden bg-white">
             {/* Background Gradient */}
             <div
                 className="fixed inset-0 pointer-events-none"
@@ -307,7 +308,7 @@ export default function ResourcesPage() {
                         <div className="mt-12 flex justify-center">
                             <Button
                                 onClick={() => setShowAll(true)}
-                                className="hover:from-purple-500 hover:to-pink-500 text-white"
+                                className="bg-[#F9F5FF] hover:bg-purple-100  text-purple-700 hover:text-purple-600 px-5 py-3"
                             >
                                 Load more
                                 <ChevronRight className="ml-2 h-4 w-4" />

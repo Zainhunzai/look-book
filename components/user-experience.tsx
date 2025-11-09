@@ -38,17 +38,39 @@ export default function UserExperience() {
           {/* Testimonial 1 */}
           <div className="flex flex-col items-center md:items-start lg:items-center">
             <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-11 md:flex-row lg:flex-row w-full">
-              <div className="shrink-0">
+              <div className="shrink-0 order-1">
                 <Image
                   src="/ceo.png"
                   alt="User"
                   width={160}
                   height={166}
-                  className="sm:w-44 sm:h-46 md:w-48 md:h-50 lg:w-50 lg:h-52"
+                  className="h-8 w-8 md:w-48 md:h-50 lg:w-50 lg:h-52"
                 />
               </div>
+
+              {/* Author - Mobile only (shows after image on mobile) */}
+              <div className="flex items-center text-center gap-2 justify-center order-2 lg:hidden px-4">
+                <div>
+                  <div className="flex items-center gap-1.5 sm:gap-2 pb-1 sm:pb-2">
+                    <p className="text-base sm:text-lg font-medium font-dm-sans leading-5 sm:leading-6 text-white">
+                      Amiya Ingram
+                    </p>
+                    <Image
+                      src="/whiteverify.svg"
+                      alt="Check"
+                      width={16}
+                      height={16}
+                      className="sm:w-5 sm:h-5"
+                    />
+                  </div>
+                  <p className="text-sm text-white font-normal leading-3.5 pt-2">
+                    Founder & CEO
+                  </p>
+                </div>
+              </div>
+
               {/* Content */}
-              <div className="flex flex-col gap-2 sm:gap-3 w-full px-4 sm:px-0">
+              <div className="flex flex-col gap-2 sm:gap-3 w-full px-4 sm:px-0 order-3 lg:order-2">
                 {/* Stars */}
                 <div className="flex gap-1 justify-center md:justify-start">
                   {[...Array(5)].map((_, i) => (
@@ -69,8 +91,8 @@ export default function UserExperience() {
                   projects, so we already knew what kind of design they want."
                 </p>
 
-                {/* Author */}
-                <div className="flex items-center gap-2 justify-center md:justify-start md:pl-5">
+                {/* Author - Desktop only (shows in content on lg) */}
+                <div className="hidden lg:flex items-center gap-2 justify-center md:justify-start">
                   <div>
                     <div className="flex items-center gap-1.5 sm:gap-2 pb-1 sm:pb-2">
                       <p className="text-base sm:text-lg font-medium font-dm-sans leading-5 sm:leading-6 text-white">
@@ -96,17 +118,39 @@ export default function UserExperience() {
           {/* Testimonial 2 */}
           <div className="flex flex-col items-center md:items-start lg:items-center">
             <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-11 md:flex-row lg:flex-row w-full">
-              <div className="shrink-0">
+              <div className="shrink-0 order-1">
                 <Image
                   src="/designer.png"
                   alt="User"
                   width={160}
                   height={166}
-                  className="sm:w-44 sm:h-46 md:w-48 md:h-50 lg:w-50 lg:h-52"
+                  className="w-8 h-8 md:w-48 md:h-50 lg:w-50 lg:h-52"
                 />
               </div>
+
+              {/* Author - Mobile only (shows after image on mobile) */}
+              <div className="flex items-center gap-2 text-center justify-center order-2 lg:hidden px-4">
+                <div>
+                  <div className="flex items-center gap-1.5 sm:gap-2 pb-1 sm:pb-2">
+                    <p className="text-base sm:text-lg font-medium font-dm-sans leading-5 sm:leading-6 text-white">
+                      Nisar Ali Shah
+                    </p>
+                    <Image
+                      src="/whiteverify.svg"
+                      alt="Check"
+                      width={16}
+                      height={16}
+                      className="sm:w-5 sm:h-5"
+                    />
+                  </div>
+                  <p className="text-sm text-white font-normal leading-3.5 pt-2">
+                    Product Designer
+                  </p>
+                </div>
+              </div>
+
               {/* Content */}
-              <div className="flex flex-col gap-2 sm:gap-3 w-full px-4 sm:px-0">
+              <div className="flex flex-col gap-2 sm:gap-3 w-full px-4 sm:px-0 order-3 lg:order-2">
                 {/* Stars */}
                 <div className="flex gap-1 justify-center md:justify-start">
                   {[...Array(5)].map((_, i) => (
@@ -127,8 +171,8 @@ export default function UserExperience() {
                   projects, so we already knew what kind of design they want."
                 </p>
 
-                {/* Author */}
-                <div className="flex items-center gap-2 justify-center md:justify-start md:pl-5">
+                {/* Author - Desktop only (shows in content on lg) */}
+                <div className="hidden lg:flex items-center gap-2 justify-center md:justify-start">
                   <div>
                     <div className="flex items-center gap-1.5 sm:gap-2 pb-1 sm:pb-2">
                       <p className="text-base sm:text-lg font-medium font-dm-sans leading-5 sm:leading-6 text-white">

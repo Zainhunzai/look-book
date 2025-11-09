@@ -35,7 +35,7 @@ export default function Navbar() {
               <a href="/how-app-works" className="hover:text-purple-600 transition-colors">How apps works?</a>
             </li>
             <li>
-              <a href="#Blog" className="hover:text-purple-600 transition-colors">Blog</a>
+              <a href="/blog" className="hover:text-purple-600 transition-colors">Blog</a>
             </li>
             {/* <li className="flex items-center gap-2">
               <a href="#Pages" className="hover:text-purple-600 transition-colors">Pages</a>
@@ -43,7 +43,7 @@ export default function Navbar() {
             </li> */}
             <Button 
               variant="outline" 
-              className="py-4 lg:px-6 px-2 lg:py-4 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90"
+              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90"
               style={{
                 borderRadius: '16px',
                 border: '1px solid var(--Temp-UntitledStyle, #000)',

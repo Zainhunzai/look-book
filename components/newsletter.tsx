@@ -21,7 +21,7 @@ export default function Newsletter() {
   };
 
   return (
-    <main className="relative flex flex-col items-center justify-center px-4 py-6 sm:py-8 md:py-10 lg:py-12 bg-white">
+    <main className="relative flex flex-col items-center justify-center px-4 pb-36 py-6 sm:py-8 md:py-10 lg:py-12 bg-white">
       <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
         {/* Phone Mockup Section */}
         <div className="flex justify-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20">
@@ -34,13 +34,13 @@ export default function Newsletter() {
               alt="Newsletter Phone"
               width={293}
               height={559}
-              className="w-full h-auto"
+              className="lg:w-[294px] lg:h-[559px]"
             />
           </div>
         </div>
 
         {/* Newsletter Section */}
-        <div className="text-center max-w-2xl mx-auto w-full absolute z-20 bg-white bottom-10 sm:bottom-12 md:bottom-16 lg:-bottom-15 px-4">
+        <div className="text-center max-w-2xl mx-auto w-full absolute z-20 bg-white bottom-20 md:bottom-16 lg:bottom-15 px-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-purple-800 font-dm-sans leading-tight sm:leading-snug md:leading-16 pt-4 sm:pt-6 md:pt-8 mb-3 sm:mb-4 md:mb-6 text-balance">
             Join Our Newsletter
           </h1>

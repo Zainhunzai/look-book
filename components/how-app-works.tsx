@@ -120,7 +120,7 @@ export function HowAppWorks() {
                         <div className="absolute -right-6 -top-6 sm:-right-8 sm:-top-8 h-24 w-24 sm:h-32 sm:w-32 rounded-full bg-white/10 blur-2xl"></div>
                         <CardContent className="relative z-10 p-0 text-center">
                           {/* Icon Container */}
-                          <div className="mb-4 sm:mb-5 md:mb-6 bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0 mx-auto">
+                          <div className="mb-4 sm:mb-5 md:mb-6 bg-white w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0 rounded-2xl mx-auto">
                             <Image
                               src={feature.image || "/placeholder.svg"}
                               alt={feature.title}
