@@ -200,4 +200,5 @@
 .phone-gradient-overlay {
   background: linear-gradient(90deg, rgba(255, 0, 123, 0.70) 2.37%, #8B44FF 107.91%);
   filter: blur(120px);
+  opacity: 0.8;
 }
