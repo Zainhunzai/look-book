@@ -85,7 +85,7 @@ export function HowAppWorks() {
   }, [totalColumns]);
 
   return (
-    <section className="px-4 py-12 sm:py-16 md:py-20 lg:py-24 sm:px-6 lg:px-8 bg-[#FFF]">
+    <section id="how-app-works" className="px-4 py-12 sm:py-16 md:py-20 lg:py-24 sm:px-6 lg:px-8 bg-[#FFF]">
       <div className="container max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8 sm:mb-10 md:mb-12 text-center">
@@ -113,7 +113,7 @@ export function HowAppWorks() {
                       <Card
                         key={feature.id}
                         className={cn(
-                          "group relative overflow-hidden rounded-2xl sm:rounded-3xl bg-purple-secondary border-0 p-5 sm:p-6 md:p-7 lg:p-8 text-white shadow-lg transition-transform duration-300 hover:scale-105"
+                          "group relative overflow-hidden rounded-2xl sm:rounded-3xl bg-purple-primary border-0 p-5 sm:p-6 md:p-7 lg:p-8 text-white shadow-lg transition-transform duration-300 hover:scale-105"
                         )}
                       >
                         {/* Background accent */}
@@ -169,7 +169,7 @@ export function HowAppWorks() {
                 <Card
                   key={feature.id}
                   className={cn(
-                    "group relative overflow-hidden rounded-2xl sm:rounded-3xl bg-purple-secondary border-0 p-5 sm:p-6 md:p-7 lg:p-8 text-white shadow-lg transition-transform duration-300 hover:scale-105"
+                    "group relative overflow-hidden rounded-2xl sm:rounded-3xl bg-purple-primary border-0 p-5 sm:p-6 md:p-7 lg:p-8 text-white shadow-lg transition-transform duration-300 hover:scale-105"
                   )}
                 >
                   {/* Background accent */}

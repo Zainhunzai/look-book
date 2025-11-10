@@ -80,12 +80,6 @@ export function Footer() {
                   href="#"
                   className="text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors font-poppins"
                 >
-                  Chat
-                </a>
-                <a
-                  href="#"
-                  className="text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors font-poppins"
-                >
                   Pricing
                 </a>
                 <a
@@ -105,7 +99,7 @@ export function Footer() {
                   Customer Support
                 </a>
                 <a
-                  href="#"
+                  href="/contacts"
                   className="text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors font-poppins"
                 >
                   Contact US
@@ -128,7 +122,7 @@ export function Footer() {
               <div className="flex flex-col space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-5">
                 <div className="hidden lg:flex space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-5 flex-col">
                   <a
-                    href="#"
+                    href="/blog"
                     className="text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors font-poppins"
                   >
                     Blog

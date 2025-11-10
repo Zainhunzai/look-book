@@ -32,15 +32,15 @@ export default function Navbar() {
               <a href="/" className="hover:text-purple-600 transition-colors">Home</a>
             </li>
             <li>
-              <a href="/how-app-works" className="hover:text-purple-600 transition-colors">How apps works?</a>
+              <a href="/#how-app-works" className="hover:text-purple-600 transition-colors">How apps works?</a>
             </li>
             <li>
               <a href="/blog" className="hover:text-purple-600 transition-colors">Blog</a>
             </li>
-            {/* <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2">
               <a href="#Pages" className="hover:text-purple-600 transition-colors">Pages</a>
               <Image src="/dropdown.svg" alt="Download App" width={24} height={24} />
-            </li> */}
+            </li>
             <Button 
               variant="outline" 
               className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90"
@@ -108,7 +108,7 @@ export default function Navbar() {
                   Home
                 </a>
                 <a 
-                  href="/how-app-works" 
+                  href="/#how-app-works" 
                   className="text-xl font-medium hover:text-purple-600 transition-colors" 
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -121,13 +121,13 @@ export default function Navbar() {
                 >
                   Blog
                 </a>
-                {/* <a 
+                <a 
                   href="/pages" 
                   className="text-xl font-medium hover:text-purple-600 transition-colors" 
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Pages
-                </a> */}
+                </a>
               </nav>
             </div>
           </div>

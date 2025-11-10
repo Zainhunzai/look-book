@@ -56,7 +56,7 @@ export default function HeroSection() {
             </svg>
             your
           </span>
-          <span className="ml-2 text-clip text-purple-500">Phone</span>
+          <span className="ml-2 text-clip text-purple-primary">Phone</span>
           <Image
             src="/line.svg"
             alt="Line"
@@ -160,21 +160,21 @@ export default function HeroSection() {
         />
         {/* Phone image */}
         <Image
-          src="/phone.png"
+          src="/phone-desktop.png"
           alt="How apps works?"
           className="relative z-10 mx-auto hidden md:block"
-          width={402}
-          height={874}
+          width={634}
+          height={974}
         />
         <Image
-          src="/halfmob.png"
+          src="/phone-mob.png"
           alt="How apps works?"
           className="relative z-10 mx-auto block md:hidden pt-10"
           width={402}
           height={874}
         />
         {/* Floating elements - hidden on mobile, shown on larger screens */}
-        <div
+        {/* <div
           className="gradient-element flex w-21 h-21 lg:w-36 lg:h-36 absolute top-150 lg:top-105 left-40 md:left-8 lg:left-112 items-center justify-center z-30"
           style={{
             borderRadius: "149px",
@@ -187,8 +187,8 @@ export default function HeroSection() {
             height={48}
             className="w-9 h-9 lg:w-12 lg:h-12"
           />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="gradient-element flex w-16 h-16 lg:w-28 lg:h-28 absolute -bottom-5 lg:bottom-48 right-3 lg:right-122 items-center justify-center z-30"
           style={{
             borderRadius: "149px",
@@ -201,8 +201,8 @@ export default function HeroSection() {
             height={40}
             className="w-8 h-8 lg:w-12 lg:h-12"
           />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="gradient-element flex w-24 h-12 lg:w-40 lg:h-16 absolute top-146 lg:top-90 right-74 lg:right-112 z-30 items-center justify-center gap-4 lg:gap-7 mx-auto"
           style={{
             borderRadius: "34px",
@@ -218,7 +218,7 @@ export default function HeroSection() {
           <span className="text-white text-xl lg:text-3xl font-medium">
             4.9
           </span>
-        </div>
+        </div> */}
       </div>
     </section>
   );

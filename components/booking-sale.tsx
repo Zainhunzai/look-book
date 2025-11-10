@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function BookingSale() {
   return (
@@ -153,8 +154,13 @@ export default function BookingSale() {
           {/* CTA Section */}
           <div className="max-w-3xl mx-auto px-2">
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-6 sm:leading-7 md:leading-8 text-netural-secondary font-dm-sans pb-5 sm:pb-6 md:pb-7">Ready to transform your salon business? Contact us today and let's discuss how Nearz can help you grow.</p>
-            <Button className="w-full sm:w-11/12 md:w-4/5 lg:w-3/5 bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors">
-              Contact US
+            <Button
+              asChild
+              className="w-full sm:w-11/12 md:w-4/5 lg:w-3/5 bg-purple-primary hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors"
+            >
+              <Link href="/contacts">
+                Contact Us
+              </Link>
             </Button>
           </div>
         </div>
