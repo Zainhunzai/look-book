@@ -29,7 +29,9 @@ export default function BookingSale() {
           <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-14 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             {/* Google Play Button */}
             <a
-              href="#"
+              href="https://play.google.com/store"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center sm:justify-start gap-3 bg-white text-black px-5 sm:px-6 md:px-8 py-3 md:py-4 rounded-xl sm:rounded-2xl hover:bg-white/90 transition-colors duration-200 font-medium w-full sm:w-auto"
             >
               <Image src="/playstore.png" alt="Google Play" width={28} height={28} className="sm:w-8 sm:h-8" />
@@ -41,7 +43,9 @@ export default function BookingSale() {
 
             {/* App Store Button */}
             <a
-              href="#"
+              href="https://apps.apple.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center sm:justify-start gap-3 bg-white text-black px-5 sm:px-6 md:px-8 py-3 md:py-4 rounded-xl sm:rounded-2xl hover:bg-white/90 transition-colors duration-200 font-medium w-full sm:w-auto"
             >
               <Image src="/blackapple.svg" alt="App Store" width={32} height={32} className="sm:w-9 sm:h-9" />

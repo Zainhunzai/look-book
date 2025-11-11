@@ -78,7 +78,9 @@ export default function HeroSection() {
       <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-14 flex flex-col lg:flex-row gap-4 items-center justify-center w-full px-4">
         {/* Google Play Button */}
         <Link
-          href="#"
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-[16px] border bg-neutral-800  text-white px-4 hover:bg-neutral-600 transition-colors duration-200"
         >
           <Image
@@ -98,7 +100,9 @@ export default function HeroSection() {
 
         {/* App Store Button */}
         <Link
-          href="#"
+          href="https://apps.apple.com/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-800  text-white px-4 hover:bg-neutral-600 transition-colors duration-200"
         >
           <svg

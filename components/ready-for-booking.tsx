@@ -89,7 +89,9 @@ export function ReadyForBooking() {
         {/* App Store Button */}
         {/* Google Play Button */}
         <Link
-          href="#"
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-800  text-white px-4 hover:bg-neutral-600 transition-colors duration-200"
         >
           <Image
@@ -107,7 +109,9 @@ export function ReadyForBooking() {
           </div>
         </Link>
         <Link
-          href="#"
+          href="https://apps.apple.com/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-800  text-white px-4 hover:bg-neutral-600 transition-colors duration-200"
         >
           <svg
