@@ -27,7 +27,7 @@ export default function Newsletter() {
         <div className="flex justify-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20">
           <div className="relative w-full max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-md">
             {/* Gradient Overlay - Top Center */}
-            <div className="absolute -top-10 left-1/2 -z-10 -translate-x-1/2 phone-gradient-overlay rounded-full z-50 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px]" />
+            <div className="absolute -top-10 left-1/2  -translate-x-1/2 phone-gradient-overlay rounded-full z-50 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px]" />
             {/* iPhone Frame */}
             <Image
               src="/iPhone-13-Pro.png"

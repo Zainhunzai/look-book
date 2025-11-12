@@ -42,18 +42,8 @@ export function Footer() {
                 alt="Look&Book"
                 width={160}
                 height={34}
-                className="sm:w-44 sm:h-9 md:w-48 md:h-10 lg:w-48 lg:h-10 mx-auto md:mx-0"
+                className="sm:w-44 sm:h-9 md:w-48 md:h-10 lg:w-48 lg:h-10 mx-auto md:mx-0 pb-28"
               />
-            </div>
-
-            {/* Social Media Icons - Right Aligned */}
-            <div className="flex md:hidden gap-6 lg:gap-8 justify-center sm:justify-start py-10">
-              {socialLinks.map((link) => (
-                <a href={link.url} key={link.name}>
-                  <Image src={link.icon} alt={link.name} width={18} height={18} />
-                  <span className="sr-only">{link.name}</span>
-                </a>
-              ))}
             </div>
 
             <Separator className="block md:hidden" />

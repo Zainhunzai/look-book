@@ -16,20 +16,20 @@ export function QRScannerSection() {
           {/* Badge and Heading Row */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mb-5 sm:mb-6">
             {/* Badge with speech bubble pointer */}
-            <div className="relative shrink-0">
+            <div className="relative shrink-0 pt-11">
               {/* Speech bubble pointer pointing upward */}
-              <div className="absolute -top-2.5 sm:-top-3 left-1/2 transform -translate-x-1/2">
-                <div className="w-0 h-0 border-l-6 border-r-6 border-b-10 sm:border-l-8 sm:border-r-8 sm:border-b-12 border-l-transparent border-r-transparent border-b-[#8B5CF6]" />
+              <div className="absolute top-2 left-1/2 transform -translate-x-1/2">
+              <Image src="/top-arrow.svg" alt="Arrow Up" width={48} height={36} />
               </div>
 
               {/* Badge */}
-              <div className="inline-flex items-center justify-center bg-[linear-gradient(286deg,#8B5CF6_-5.43%,#5B21B6_111.96%)] text-white px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg font-bold text-xs sm:text-sm md:text-base tracking-tight font-dm-sans">
+              <div className="inline-flex text-3xl text-center items-center justify-center bg-[linear-gradient(286deg,#8B5CF6_-5.43%,#5B21B6_111.96%)] text-white px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg font-bold tracking-tight font-dm-sans w-[300px] h-[71px]">
                 QUICK SCANNER
               </div>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-onest text-neutral-700 leading-tight sm:leading-snug text-center sm:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold font-onest text-neutral-700 leading-tight sm:leading-snug text-center sm:text-left">
               <span className="text-balance">
                 Scan QR code
                 <br /> to get started

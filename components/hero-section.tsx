@@ -4,35 +4,14 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 pt-12 sm:pt-20"
-    >
-      <div className="absolute -z-20"
-        style={{
-          opacity: 0.32,
-          background: "linear-gradient(40deg, rgba(255, 212, 233, 0.24) -30.02%, rgba(193, 159, 253, 0.24) 102.61%)",
-          filter: "blur(125px)",
-        }}
-      />
+    <section className="relative overflow-hidden flex flex-col items-center justify-center px-4 sm:px-6 pt-12 sm:py-40">
+      <div className="absolute inset-0 -z-10 bg-hero-section-gradient" />
       {/* Main Headline */}
       <div className="max-w-4xl w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center items-center leading-14 sm:leading-snug text-gray-900">
           Get
-          <span
-            className="ml-2 sm:ml-3 mr-2 sm:mr-3 py-0 text-white relative overflow-hidden"
-            style={{
-              borderRadius: "10px",
-            }}
-          >
-            <span
-              className="absolute inset-0 py-0"
-              style={{
-                borderRadius: "26px",
-                background:
-                  "linear-gradient(286deg, var(--purple-400, #A78BFA) -5.43%, var(--purple-600, #7C3AED) 111.96%)",
-                filter: "blur(6px)",
-                zIndex: -1,
-              }}
-            />
+          <span className="ml-2 sm:ml-3 mr-2 sm:mr-3 py-0 text-white relative overflow-hidden rounded-[10px]">
+            <span className="absolute inset-0 py-0 bg-lookbook-text-gradient -z-10" />
             <span className="relative z-10 py-0">Look&Book</span>
           </span>
           on
@@ -149,27 +128,12 @@ export default function HeroSection() {
       </div>
 
       {/* Blurred gradient background */}
-      <div
-        className="fixed inset-0 -z-10"
-        style={{
-          background: "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
-          opacity: 0.21,
-          filter: "blur(125px)",
-        }}
-      />
+      <div className="absolute inset-10 -z-10 bg-hero-secondary-gradient mx-auto pt-40" />
+      <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
 
       <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
         {/* Background gradient */}
-        <div
-          className="absolute bottom-90 -z-20 lg:bottom-0 w-full max-w-[350px] md:max-w-[350px] lg:max-w-[402px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px]"
-          style={{
-            borderRadius: "68px",
-            background:
-              "linear-gradient(0deg, var(--purple-500, #8B5CF6) 23.1%, var(--orange-50, #FFF7ED) 76.9%)",
-            filter: "blur(40px)",
-            pointerEvents: "none",
-          }}
-        />
+        <div className="absolute bottom-90 -z-20 lg:bottom-0 w-full max-w-[350px] md:max-w-[350px] lg:max-w-[402px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px] bg-hero-phone-gradient pointer-events-none" />
         {/* Phone image */}
         <Image
           src="/phone-desktop.png"

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function BookingSale() {
   return (
-    <main className="w-full bg-white mx-auto px-4 lg:px-0">
+    <main className=" w-full bg-white mx-auto px-4 lg:px-0">
       {/* Hero Section */}
       <section className="relative container max-w-5xl bg-purple-tertiary mx-auto px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-12 overflow-hidden rounded-4xl backdrop-blur-[41.5px]">
 
@@ -82,7 +82,7 @@ export default function BookingSale() {
       </section>
 
       {/* Main Content Section */}
-      <section className="relative w-full bg-linear-to-b from-purple-50 to-pink-50 px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 mt-10 overflow-hidden">
+      <section className="relative w-full px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24 mt-10 overflow-hidden">
         {/* Background Gradient SVG */}
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           <svg

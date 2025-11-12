@@ -6,15 +6,15 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-purple-dark:#42307D;
-  --color-purple-primary:#5B21B6;
-  --color-purple-secondary:#7C3AED;
-  --color-purple-tertiary:#6D28D9;
-  --color-gray-primary:#71717A;
-  --color-gray-secondary:#3F3F46;
-  --color-gray-tertiary:#52525B;
-  --color-netural-primary:#27272A;
-  --color-netural-secondary:#52525B;
+  --color-purple-dark: #42307D;
+  --color-purple-primary: #5B21B6;
+  --color-purple-secondary: #7C3AED;
+  --color-purple-tertiary: #6D28D9;
+  --color-gray-primary: #71717A;
+  --color-gray-secondary: #3F3F46;
+  --color-gray-tertiary: #52525B;
+  --color-netural-primary: #27272A;
+  --color-netural-secondary: #52525B;
   --purple-50: #F5F3FF;
   --purple-100: #EDE9FE;
   --purple-300: #C4B5FD;
@@ -24,8 +24,8 @@
   --purple-800: #5B21B6;
   --orange-50: #FFF7ED;
   --red-300: #FDA4AF;
-  --neutral-500:#71717A;
-  --neutral-700:#3F3F46;
+  --neutral-500: #71717A;
+  --neutral-700: #3F3F46;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -149,9 +149,11 @@
   html {
     scroll-behavior: smooth;
   }
+
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -159,12 +161,15 @@
 
 /* Hide scrollbar utility class */
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: none;
+  /* Chrome, Safari and Opera */
   width: 0;
   height: 0;
   background: transparent;
@@ -201,7 +206,48 @@
 
 /* Phone Image Gradient Overlay - Blurred gradient for phone mockup */
 .phone-gradient-overlay {
-  background: linear-gradient(90deg, rgba(255, 0, 123, 0.70) 2.37%, #8B44FF 107.91%);
+  border-radius: 156px;
+  background: linear-gradient(90deg, rgba(255, 0, 123, 0.70) 22.86%, #8B44FF 88.67%);
   filter: blur(120px);
-  opacity: 0.8;
+  width: 207px;
+  height: 134px;
+}
+
+/* Hero Section Gradients */
+.bg-hero-section-gradient {
+  opacity: 0.32;
+  background: linear-gradient(40deg, rgba(255, 212, 233, 0.24) -30.02%, rgba(193, 159, 253, 0.24) 102.61%);
+  filter: blur(125px);
+  width: 1411px;
+  height: 1461px;
+  flex-shrink: 0;
+}
+
+.bg-lookbook-text-gradient {
+  border-radius: 26px;
+  background: linear-gradient(286deg, var(--purple-400, #A78BFA) -5.43%, var(--purple-600, #7C3AED) 111.96%);
+  filter: blur(6px);
+}
+
+.bg-hero-secondary-gradient {
+  background: linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%);
+  opacity: 0.21;
+  filter: blur(125px);
+}
+
+.bg-hero-white-fade {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 55%, #FFFFFF 100%);
+}
+
+.bg-hero-phone-gradient {
+  border-radius: 68px;
+  background: linear-gradient(0deg, var(--purple-500, #8B5CF6) 23.1%, var(--orange-50, #FFF7ED) 76.9%);
+  filter: blur(40px);
+}
+
+/* Ready for Booking Gradient */
+.bg-ready-booking-gradient {
+  border-radius: 16px;
+  background: linear-gradient(286deg, var(--purple-500, #8B5CF6) -5.43%, var(--purple-600, #7C3AED) 111.96%);
+  filter: blur(6px);
 }

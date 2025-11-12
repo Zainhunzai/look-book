@@ -28,7 +28,7 @@ export function ReadyForBooking() {
 
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-white">
+    <section className="flex flex-col items-center justify-center px-4 py-12 sm:py-16 md:py-20 bg-white">
       {/* Main Heading Section */}
       <div className="w-full max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12">
         <h1 className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-2 sm:gap-2.5 md:gap-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-dm-sans text-center text-neutral-800 px-2">
@@ -51,22 +51,8 @@ export function ReadyForBooking() {
               height={21}
               className="w-16 sm:w-20 md:w-28 lg:w-36 xl:w-44 h-auto hidden md:block"
             />
-            <span
-              className="p-2 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold relative overflow-hidden whitespace-nowrap"
-              style={{
-                borderRadius: "12px",
-              }}
-            >
-              <span
-                className="absolute inset-0"
-                style={{
-                  borderRadius: "12px",
-                  background:
-                    "var(--Gradient, linear-gradient(286deg, var(--purple-500, #8B5CF6) -5.43%, var(--purple-800, #5B21B6) 111.96%))",
-                  filter: "blur(10px)",
-                  zIndex: 0,
-                }}
-              />
+            <span className="p-px text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold relative overflow-hidden whitespace-nowrap rounded-[16px]">
+              <span className="absolute inset-0 bg-ready-booking-gradient z-0" />
               <span className="relative z-10">booking?</span>
             </span>
             <Image
@@ -81,11 +67,11 @@ export function ReadyForBooking() {
       </div>
 
       {/* Subtitle */}
-      <p className="text-lg lg:text-2xl text-neutral-600 font-dm-sans font-medium leading-6 text-center mb-8 sm:mb-10 md:mb-12 lg:mb-14 px-4">
+      <p className="text-lg lg:text-2xl text-neutral-600 font-dm-sans font-medium leading-6 text-center px-4">
         Try Look&Book for an appointment today. it is free to get started.
       </p>
 
-      <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-14 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto px-4 pb-10">
+      <div className="mt-8 md:mt-10 lg:mt-14 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto px-4">
         {/* App Store Button */}
         {/* Google Play Button */}
         <Link
@@ -150,21 +136,12 @@ export function ReadyForBooking() {
       </div>
 
       {/* Footer Text */}
-      <div className="hidden md:block text-center mb-6 sm:mb-8 md:mb-10 px-4">
+      <div className="hidden md:block text-center px-4 pt-22 ">
         <p className="text-lg text-neutral-600 font-normal font-onest leading-7">
           From inspiration to appointment, your next
           <br className="hidden sm:block" />
           beauty look is just a tap away.
         </p>
-      </div>
-      {/* Social Media Icons - Right Aligned */}
-      <div className="hidden md:flex gap-6 lg:gap-8 justify-center sm:justify-start pt-5 sm:pt-6 md:pt-7">
-        {socialLinks.map((link) => (
-          <a href={link.url} key={link.name}>
-            <Image src={link.icon} alt={link.name} width={18} height={18} />
-            <span className="sr-only">{link.name}</span>
-          </a>
-        ))}
       </div>
     </section>
   );

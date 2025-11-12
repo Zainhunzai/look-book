@@ -183,15 +183,15 @@ export default function Page() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative overflow-hidden">
       {/* Gradient Background Layer */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none -z-10"
         style={{
           background: "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
           opacity: 0.21,
           filter: "blur(125px)",
-          zIndex: 0,
+          zIndex: -1,
         }}
       />
 

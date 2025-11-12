@@ -14,6 +14,10 @@ import "swiper/css/navigation";
 export default function UserExperience() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
   const [mobileSwiperInstance, setMobileSwiperInstance] = useState<SwiperType | null>(null);
+  const [isDesktopBeginning, setIsDesktopBeginning] = useState(true);
+  const [isDesktopEnd, setIsDesktopEnd] = useState(false);
+  const [isMobileBeginning, setIsMobileBeginning] = useState(true);
+  const [isMobileEnd, setIsMobileEnd] = useState(false);
 
   const testimonials = [
     {
@@ -54,20 +58,36 @@ export default function UserExperience() {
     testimonials.slice(idx * 2, idx * 2 + 2)
   );
 
-  const goPrev = () => {
-    if (swiperInstance) {
+  const updateDesktopState = (swiper: SwiperType) => {
+    setIsDesktopBeginning(swiper.isBeginning);
+    setIsDesktopEnd(swiper.isEnd);
+  };
+
+  const updateMobileState = (swiper: SwiperType) => {
+    setIsMobileBeginning(swiper.isBeginning);
+    setIsMobileEnd(swiper.isEnd);
+  };
+
+  const goPrevDesktop = () => {
+    if (swiperInstance && !isDesktopBeginning) {
       swiperInstance.slidePrev();
     }
-    if (mobileSwiperInstance) {
+  };
+
+  const goNextDesktop = () => {
+    if (swiperInstance && !isDesktopEnd) {
+      swiperInstance.slideNext();
+    }
+  };
+
+  const goPrevMobile = () => {
+    if (mobileSwiperInstance && !isMobileBeginning) {
       mobileSwiperInstance.slidePrev();
     }
   };
 
-  const goNext = () => {
-    if (swiperInstance) {
-      swiperInstance.slideNext();
-    }
-    if (mobileSwiperInstance) {
+  const goNextMobile = () => {
+    if (mobileSwiperInstance && !isMobileEnd) {
       mobileSwiperInstance.slideNext();
     }
   };
@@ -106,11 +126,14 @@ export default function UserExperience() {
         {/* Desktop/Tablet Slider */}
         <div className="hidden md:block relative mx-auto container">
           <Swiper
-            onSwiper={setSwiperInstance}
+            onSwiper={(swiper) => {
+              setSwiperInstance(swiper);
+              updateDesktopState(swiper);
+            }}
+            onSlideChange={(swiper) => updateDesktopState(swiper)}
             modules={[Navigation]}
             spaceBetween={20}
             slidesPerView={1.1}
-            loop={true}
             className="desktop-swiper"
           >
             {slides.map((slide, slideIdx) => (
@@ -164,15 +187,25 @@ export default function UserExperience() {
           <div className="mt-10 flex items-center justify-center gap-6">
             <button
               aria-label="Previous testimonials"
-              onClick={goPrev}
-              className="h-11 w-11 rounded-full border border-white/30 text-white flex items-center justify-center active:scale-95 transition"
+              onClick={goPrevDesktop}
+              disabled={isDesktopBeginning}
+              className={`h-11 w-11 rounded-full border border-white/30 text-white flex items-center justify-center transition ${
+                isDesktopBeginning
+                  ? "opacity-50 cursor-not-allowed"
+                  : "active:scale-95 hover:opacity-80"
+              }`}
             >
               <ArrowLeft size={20} />
             </button>
             <button
               aria-label="Next testimonials"
-              onClick={goNext}
-              className="h-11 w-11 rounded-full bg-gradient-primary text-white flex items-center justify-center active:scale-95 transition"
+              onClick={goNextDesktop}
+              disabled={isDesktopEnd}
+              className={`h-11 w-11 rounded-full bg-gradient-primary text-white flex items-center justify-center transition ${
+                isDesktopEnd
+                  ? "opacity-50 cursor-not-allowed"
+                  : "active:scale-95 hover:opacity-80"
+              }`}
             >
               <ArrowRight size={20} />
             </button>
@@ -182,11 +215,14 @@ export default function UserExperience() {
         {/* Mobile Slider: two cards per slide */}
         <div className="md:hidden relative max-w-7xl mx-auto">
           <Swiper
-            onSwiper={setMobileSwiperInstance}
+            onSwiper={(swiper) => {
+              setMobileSwiperInstance(swiper);
+              updateMobileState(swiper);
+            }}
+            onSlideChange={(swiper) => updateMobileState(swiper)}
             modules={[Navigation]}
             spaceBetween={12}
             slidesPerView={1}
-            loop={true}
             className="mobile-swiper"
           >
             {slides.map((slide, idx) => (
@@ -244,15 +280,25 @@ export default function UserExperience() {
           <div className="mt-8 flex items-center justify-center gap-6">
             <button
               aria-label="Previous testimonials"
-              onClick={goPrev}
-              className="h-10 w-10 rounded-full border border-white/30 text-white flex items-center justify-center active:scale-95 transition"
+              onClick={goPrevMobile}
+              disabled={isMobileBeginning}
+              className={`h-10 w-10 rounded-full border border-white/30 text-white flex items-center justify-center transition ${
+                isMobileBeginning
+                  ? "opacity-50 cursor-not-allowed"
+                  : "active:scale-95 hover:opacity-80"
+              }`}
             >
               <ArrowLeft size={18} />
             </button>
             <button
               aria-label="Next testimonials"
-              onClick={goNext}
-              className="h-10 w-10 rounded-full bg-purple-secondary text-white flex items-center justify-center active:scale-95 transition"
+              onClick={goNextMobile}
+              disabled={isMobileEnd}
+              className={`h-10 w-10 rounded-full bg-purple-secondary text-white flex items-center justify-center transition ${
+                isMobileEnd
+                  ? "opacity-50 cursor-not-allowed"
+                  : "active:scale-95 hover:opacity-80"
+              }`}
             >
               <ArrowRight size={18} />
             </button>
