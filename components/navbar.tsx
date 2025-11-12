@@ -103,16 +103,17 @@ export default function Navbar() {
                   {/* Backdrop */}
                   <div className="fixed inset-0 z-30" onClick={() => setIsPagesDropdownOpen(false)} />
                   {/* Dropdown Content */}
-                  <div className="absolute top-full -left-75 mt-5 w-[620px] bg-white rounded-3xl border border-gray-200 shadow-lg z-40 p-6">
-                    <div className="flex">
+                  <Image src="/Polygon.svg" alt="Polygon" width={35} height={20} className="absolute top-7 left-0 z-30 opacity-100"/>
+                  <div className="absolute top-full -left-75 mt-5 w-[622px] bg-white rounded-3xl border z-40 p-8">
+                    <div className="flex gap-2">
                       {/* Left Section - Navigation Items */}
-                      <div className="space-y-4 flex-1 w-2/5">
+                      <div className="space-y-2 flex-1 w-2/5">
                         {pagesDropdownItems.map((item, index) => (
                           <Link
                             key={index}
                             href={item.href}
                             onClick={() => setIsPagesDropdownOpen(false)}
-                            className="flex items-center gap-4 p-3 rounded-2xl hover:bg-gray-50 transition-colors"
+                            className="flex items-center gap-4 p-2 rounded-2xl hover:bg-gray-50 transition-colors"
                           >
                             <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center">
                               <Image src={item.icon || "/placeholder.svg"} alt={item.title} width={24} height={24} />
@@ -126,9 +127,9 @@ export default function Navbar() {
                       </div>
 
                       {/* Right Section - Placeholder Box with Icon and Text */}
-                      <div className="flex flex-col gap-4 w-3/5">
+                      <div className="flex flex-col justify-center gap-4 w-3/5">
 
-                        <div className="w-full h-48 rounded-2xl border border-gray-200 shadow-sm bg-white/70 flex items-center justify-center">
+                        <div className="w-full h-32 rounded-2xl border border-gray-200 shadow-sm bg-[#FAFAFA] flex items-center justify-center gap-2">
                           <div className="w-22 h-px bg-gray-300" />  {/* replaces <Separator className="w-20" /> */}
                           <Image
                             src="/cost.svg"
@@ -143,7 +144,7 @@ export default function Navbar() {
                         {/* Text Content */}
                         <div>
                           <h3 className="text-sm font-dm-sans font-medium leading-3 text-neutral-700">How App Works?</h3>
-                          <p className="text-xs font-inter font-light leading-3 text-neutral-500 pt-1.5">Introducing modern instantly booking method!</p>
+                          <p className="text-xs font-inter font-light leading-3 text-neutral-500 pt-2">Introducing modern instantly booking method!</p>
                         </div>
                       </div>
                     </div>

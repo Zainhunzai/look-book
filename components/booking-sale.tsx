@@ -6,7 +6,7 @@ export default function BookingSale() {
   return (
     <main className="w-full bg-white mx-auto px-4 lg:px-0">
       {/* Hero Section */}
-      <section className="relative container max-w-7xl bg-purple-tertiary mx-auto px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-12 overflow-hidden rounded-2xl sm:rounded-3xl md:rounded-[32px] backdrop-blur-[41.5px]">
+      <section className="relative container max-w-5xl bg-purple-tertiary mx-auto px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-12 overflow-hidden rounded-4xl backdrop-blur-[41.5px]">
 
         {/* Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto pb-20 lg:pb-0">
@@ -73,11 +73,11 @@ export default function BookingSale() {
         </div>
 
         <div className="block">
-          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute -bottom-13 right-0 z-40 hidden lg:block" />
-          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute top-0 left-0 z-30 rotate-180 hidden lg:block" />
-          <Image src="/Star.svg" alt="Booking Sale" width={16} height={16} className="absolute top-6 left-6 sm:top-8 sm:left-8 md:top-10 md:left-10 w-4 h-4 sm:w-5 sm:h-5" />
-          <Image src="/graphics-elements.svg" alt="Booking Sale" width={203} height={183} className="absolute -bottom-20 right-0 md:bottom-20 md::right-15" />
-          <Image src="/triangle.svg" alt="Booking Sale" width={12} height={12} className="absolute bottom-16 left-20 sm:bottom-20 sm:left-32 md:bottom-20 md:left-50 w-3 h-3 sm:w-3.5 sm:h-3.5" />
+          <Image src="/halfcircle.svg" alt="Booking Sale" width={278} height={109} className="absolute -bottom-20 -right-40 rotate-12 z-40 hidden lg:block" />
+          <Image src="/left-circle.svg" alt="Booking Sale" width={278} height={20} className="absolute top-0 left-0 z-30 hidden lg:block w-40 h-40" />
+          {/* <Image src="/Star.svg" alt="Booking Sale" width={16} height={16} className="absolute top-6 left-6 sm:top-8 sm:left-8 md:top-10 md:left-10 w-4 h-4 sm:w-5 sm:h-5" /> */}
+          <Image src="/graphics-elements.svg" alt="Booking Sale" width={203} height={183} className="absolute -bottom-20 right-0 md:bottom-10 md:-right-10" />
+          <Image src="/triangle.svg" alt="Booking Sale" width={12} height={12} className="absolute bottom-16 left-20 sm:bottom-20 sm:left-32 md:bottom-5 md:left-5 w-3 h-3 sm:w-3.5 sm:h-3.5" />
         </div>
       </section>
 

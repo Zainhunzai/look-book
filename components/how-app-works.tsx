@@ -31,27 +31,27 @@ const features: Feature[] = [
     title: "Instant Booking",
     description:
       "Enjoy real-time availability and instant appointment confirmations.",
-    image: "/booking.svg",
+    image: "/cost.svg",
   },
   {
     id: "4",
     title: "Verified Stylist",
     description:
       "Every stylist on our platform is verified for quality and trust.",
-    image: "/verified.svg",
+    image: "/dimond.svg",
   },
   {
     id: "5",
     title: "Smart Checkout",
     description: "Enjoy quick, secure, and seamless payments — all in one tap.",
-    image: "/booking.svg",
+    image: "/cost.svg",
   },
   {
     id: "6",
     title: "Talk to Your Stylist",
     description:
       "Connect directly with your stylist to discuss styles, timings, or special requests.",
-    image: "/stylist.svg",
+    image: "/fast.svg",
   },
 ];
 
@@ -124,9 +124,9 @@ export function HowAppWorks() {
                             <Image
                               src={feature.image || "/placeholder.svg"}
                               alt={feature.title}
-                              width={48}
-                              height={48}
-                              className="mx-auto sm:w-14 sm:h-14"
+                              width={32}
+                              height={32}
+                              className="mx-auto h-8 w-8"
                             />
                           </div>
                           {/* Title */}

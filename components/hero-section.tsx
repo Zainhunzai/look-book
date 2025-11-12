@@ -4,28 +4,36 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-16 md:py-24 lg:py-32">
+    <section className="flex flex-col items-center justify-center px-4 sm:px-6 pt-12 sm:pt-20"
+    >
+      <div className="absolute -z-20"
+        style={{
+          opacity: 0.32,
+          background: "linear-gradient(40deg, rgba(255, 212, 233, 0.24) -30.02%, rgba(193, 159, 253, 0.24) 102.61%)",
+          filter: "blur(125px)",
+        }}
+      />
       {/* Main Headline */}
       <div className="max-w-4xl w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center items-center leading-tight sm:leading-snug text-gray-900">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center items-center leading-14 sm:leading-snug text-gray-900">
           Get
           <span
-            className="ml-2 sm:ml-3 mr-2 sm:mr-3 py-1 px-2 sm:px-3 text-white relative overflow-hidden"
+            className="ml-2 sm:ml-3 mr-2 sm:mr-3 py-0 text-white relative overflow-hidden"
             style={{
               borderRadius: "10px",
             }}
           >
             <span
-              className="absolute inset-0"
+              className="absolute inset-0 py-0"
               style={{
-                borderRadius: "16px",
+                borderRadius: "26px",
                 background:
                   "linear-gradient(286deg, var(--purple-400, #A78BFA) -5.43%, var(--purple-600, #7C3AED) 111.96%)",
                 filter: "blur(6px)",
                 zIndex: -1,
               }}
             />
-            <span className="relative z-10">Look&Book</span>
+            <span className="relative z-10 py-0">Look&Book</span>
           </span>
           on
           <br />
@@ -68,14 +76,14 @@ export default function HeroSection() {
       </div>
 
       {/* Description */}
-      <p className="mt-6 sm:mt-8 md:mt-10 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-gray-primary text-center leading-6 sm:leading-7 md:leading-8 px-4">
+      <p className="mt-6 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-gray-primary text-center leading-6 sm:leading-7 md:leading-8 px-4">
         Discover trusted beauty professionals near you. Book appointments in
         seconds and explore your perfect style with our handpicked network of
         expert stylists.
       </p>
 
       {/* App Store Buttons */}
-      <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-14 flex flex-col lg:flex-row gap-4 items-center justify-center w-full px-4">
+      <div className="mt-8 sm:mt-10 md:mt-12 flex flex-col lg:flex-row gap-4 items-center justify-center w-full px-4">
         {/* Google Play Button */}
         <Link
           href="https://play.google.com/store"
@@ -144,21 +152,21 @@ export default function HeroSection() {
       <div
         className="fixed inset-0 -z-10"
         style={{
-          background:
-            "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
+          background: "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
           opacity: 0.21,
           filter: "blur(125px)",
         }}
       />
-      <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-24 lg:pt-32 px-4">
+
+      <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
         {/* Background gradient */}
         <div
-          className="absolute bottom-75 -z-20 lg:bottom-0 w-full max-w-[350px] md:max-w-[350px] lg:max-w-[402px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px]"
+          className="absolute bottom-90 -z-20 lg:bottom-0 w-full max-w-[350px] md:max-w-[350px] lg:max-w-[402px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px]"
           style={{
             borderRadius: "68px",
             background:
               "linear-gradient(0deg, var(--purple-500, #8B5CF6) 23.1%, var(--orange-50, #FFF7ED) 76.9%)",
-            filter: "blur(35px)",
+            filter: "blur(40px)",
             pointerEvents: "none",
           }}
         />
@@ -167,7 +175,7 @@ export default function HeroSection() {
           src="/phone-desktop.png"
           alt="How apps works?"
           className="relative z-10 mx-auto hidden md:block"
-          width={634}
+          width={600}
           height={974}
         />
         <Image
