@@ -67,7 +67,7 @@ export function Footer() {
                   App
                 </a>
                 <a
-                  href="#"
+                  href="/#pricing"
                   className="text-sm md:text-base text-gray-600 hover:text-gray-900 transition-colors font-poppins"
                 >
                   Pricing

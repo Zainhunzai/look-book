@@ -45,7 +45,7 @@ export default function Navbar() {
       title: "Pricing",
       subtitle: "Packages",
       icon: "/price-logo.svg",
-      href: "/pricing",
+      href: "/#pricing",
     },
     {
       title: "Lookbook for iPhone",
@@ -103,7 +103,7 @@ export default function Navbar() {
                   {/* Backdrop */}
                   <div className="fixed inset-0 z-30" onClick={() => setIsPagesDropdownOpen(false)} />
                   {/* Dropdown Content */}
-                  <Image src="/Polygon.svg" alt="Polygon" width={35} height={20} className="absolute top-7 left-0 z-30 opacity-100"/>
+                  <Image src="/Polygon.svg" alt="Polygon" width={35} height={20} className="absolute top-7 left-0 z-30 opacity-100" />
                   <div className="absolute top-full -left-75 mt-5 w-[622px] bg-white rounded-3xl border z-40 p-8">
                     <div className="flex gap-2">
                       {/* Left Section - Navigation Items */}
@@ -154,14 +154,12 @@ export default function Navbar() {
             </li>
             <Button
               variant="outline"
-              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent"
+              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent shadow-lg"
               style={{
                 borderRadius: "16px",
                 border: "1px solid var(--Temp-UntitledStyle, #000)",
                 background:
                   "var(--Gradient, linear-gradient(286deg, var(--purple-500, #8B5CF6) -5.43%, var(--purple-800, #5B21B6) 111.96%))",
-                boxShadow:
-                  "0 0 0 1px #FFF inset, 0 0 0 1.5px var(--purple-50, #F5F3FF) inset, 0 0 0 1px var(--purple-300, #C4B5FD), 0 8px 16px 0 var(--purple-100, #EDE9FE), 0 16px 32px 0 var(--purple-100, #EDE9FE)",
               }}
             >
               Download App

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function LookAndBook() {
   return (
-    <div className="overflow-hidden">
+    <div id="pricing" className="overflow-hidden">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-20">
         {/* Mobile Layout - Hidden on lg and above */}
         <div className="lg:hidden space-y-6">

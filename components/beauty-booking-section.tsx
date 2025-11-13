@@ -30,7 +30,7 @@ export default function BeautyBookingSection() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-18 items-center max-w-7xl mx-auto">
                 {/* Left: Phone Mockup */}
                 <div className="flex justify-center">
-                    <Image src="/leftmock.png" alt="Phone" width={513} height={573} className="w-full" />
+                    <Image src="/leftmock.png" alt="Phone" width={463} height={573} className="w-full h-auto" />
                 </div>
 
                 {/* Right: Content */}

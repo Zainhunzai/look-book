@@ -218,9 +218,6 @@
   opacity: 0.32;
   background: linear-gradient(40deg, rgba(255, 212, 233, 0.24) -30.02%, rgba(193, 159, 253, 0.24) 102.61%);
   filter: blur(125px);
-  width: 1411px;
-  height: 1461px;
-  flex-shrink: 0;
 }
 
 .bg-lookbook-text-gradient {
@@ -242,7 +239,7 @@
 .bg-hero-phone-gradient {
   border-radius: 68px;
   background: linear-gradient(0deg, var(--purple-500, #8B5CF6) 23.1%, var(--orange-50, #FFF7ED) 76.9%);
-  filter: blur(40px);
+  filter: blur(35px);
 }
 
 /* Ready for Booking Gradient */

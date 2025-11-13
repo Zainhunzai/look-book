@@ -184,6 +184,14 @@ export default function Page() {
 
   return (
     <div className="relative overflow-hidden">
+        {/* White fade at top to blend with body background */}
+        <div
+        className="absolute inset-x-0 top-0 h-48 -z-10 pointer-events-none"
+        style={{
+          background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 55%, #FFFFFF 100%)",
+        }}
+      />
+
       {/* Gradient Background Layer */}
       <div
         className="absolute inset-0 pointer-events-none -z-10"
@@ -194,6 +202,10 @@ export default function Page() {
           zIndex: -1,
         }}
       />
+
+    
+      {/* White fade at bottom to blend with body background */}
+      <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
 
       {/* Content Layer */}
       <div className="relative z-10">

@@ -5,45 +5,27 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden flex flex-col items-center justify-center px-4 sm:px-6 pt-12 sm:py-40">
-      <div className="absolute inset-0 -z-10 bg-hero-section-gradient" />
+      {/* <div className="absolute inset-0 -z-10 bg-hero-section-gradient" /> */}
       {/* Main Headline */}
       <div className="max-w-4xl w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center items-center leading-14 sm:leading-snug text-gray-900">
-          Get
-          <span className="ml-2 sm:ml-3 mr-2 sm:mr-3 py-0 text-white relative overflow-hidden rounded-[10px]">
-            <span className="absolute inset-0 py-0 bg-lookbook-text-gradient -z-10" />
-            <span className="relative z-10 py-0">Look&Book</span>
-          </span>
-          on
-          <br />
-          <span className="inline-flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto hidden md:flex"
-              viewBox="0 0 200 35"
-              fill="none"
-            >
-              <path
-                d="M177.547 0H185.574L199.069 17.03L185.574 34.06H177.547L183.817 26.1668C185.623 23.871 187.33 21.7656 188.986 19.8518H0V14.1593H188.935C187.28 12.1991 185.574 10.1413 183.817 7.89313L177.547 0Z"
-                fill="url(#paint0_linear_581_2040)"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_581_2040"
-                  x1="66.1929"
-                  y1="120.537"
-                  x2="-11.4788"
-                  y2="-11.3362"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#8B5CF6" />
-                  <stop offset="1" stopColor="#5B21B6" />
-                </linearGradient>
-              </defs>
-            </svg>
-            your
-          </span>
-          <span className="ml-2 text-clip text-purple-primary">Phone</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-9 sm:leading-10 md:leading-12 lg:leading-tight text-neutral-700 font-dm-sans">
+          <div className="text-center">
+            Get
+            <span className="ml-2 mr-2 py-0 text-white relative overflow-hidden rounded-[10px]">
+              <span className="absolute inset-0 md:inset-2 py-0 bg-lookbook-text-gradient -z-10" />
+              <span className="relative z-10 py-0">Look&Book</span>
+            </span>
+            on
+          </div>
+          <div className="pl-32">
+            <span className="inline-flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
+              <Image src="/line.svg" alt="Your" width={200} height={34} className="w-52 hidden md:flex" />
+            </span>
+            <span className="pl-14">
+              your
+            </span>
+            <span className="ml-2 text-clip text-purple-primary">Phone</span>
+          </div>
           <Image
             src="/line.svg"
             alt="Line"
@@ -127,8 +109,8 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      {/* Blurred gradient background */}
-      <div className="absolute inset-10 -z-10 bg-hero-secondary-gradient mx-auto pt-40" />
+      {/* Blurred gradient background - starts after buttons, covers full screen */}
+      <div className="absolute inset-x-0 top-[60%] sm:top-[55%] md:top-[30%] bottom-0 -z-10 bg-hero-secondary-gradient" />
       <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
 
       <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
