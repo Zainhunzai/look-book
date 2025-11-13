@@ -120,7 +120,7 @@ function LookAndBook() {
         </div>
 
         {/* Desktop Layout - Hidden below lg */}
-        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
+        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center pb-22 container max-w-7xl mx-auto">
           {/* Left Section */}
           <div className="space-y-5 sm:space-y-6 md:space-y-8">
             <div className="pb-3 sm:pb-4 text-center md:text-left">
