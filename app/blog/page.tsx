@@ -158,12 +158,14 @@ export default function ResourcesPage() {
     const remainingCount = resourcesData.length - initialCount
 
     return (
-        <main className="relative overflow-hidden bg-white">
+        <main className="relative min-h-screen overflow-hidden bg-white">
             {/* Background Gradient */}
             <div
-                className="fixed inset-0 pointer-events-none"
+                className="absolute inset-x-0 top-0 pointer-events-none"
                 style={{
-                    background: "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
+                    minHeight: "100vh",
+                    height: "100vh",
+                    background: "linear-gradient(180deg, rgba(196, 181, 253, 0.9) 0%, rgba(253, 164, 175, 0.6) 55%, rgba(253, 164, 175, 0) 100%)",
                     opacity: 0.21,
                     filter: "blur(125px)",
                     zIndex: 0

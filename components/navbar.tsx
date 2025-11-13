@@ -56,7 +56,7 @@ export default function Navbar() {
   ]
 
   return (
-    <>
+    <div className="bg-[#FAFAFA]">
       <nav className="container max-w-7xl mx-auto flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8">
         {/* Logo - Hidden on mobile, shown on desktop */}
         <div className="shrink-0 hidden lg:block">
@@ -154,12 +154,13 @@ export default function Navbar() {
             </li>
             <Button
               variant="outline"
-              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent shadow-lg"
+              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent"
               style={{
                 borderRadius: "16px",
                 border: "1px solid var(--Temp-UntitledStyle, #000)",
                 background:
                   "var(--Gradient, linear-gradient(286deg, var(--purple-500, #8B5CF6) -5.43%, var(--purple-800, #5B21B6) 111.96%))",
+                boxShadow: "0 0 0 1px #FFF inset, 0 0 0 1.5px var(--purple-50, #F5F3FF) inset, 0 0 0 1px var(--purple-300, #C4B5FD), 0 8px 16px 0 var(--purple-100, #EDE9FE), 0 16px 32px 0 var(--purple-100, #EDE9FE)",
               }}
             >
               Download App
@@ -332,6 +333,6 @@ export default function Navbar() {
           </div>
         </>
       )}
-    </>
+    </div>
   )
 }

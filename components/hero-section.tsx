@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden flex flex-col items-center justify-center px-4 sm:px-6 pt-12 sm:py-40">
-      {/* <div className="absolute inset-0 -z-10 bg-hero-section-gradient" /> */}
+      <div className="absolute inset-0 z-10 bg-hero-section-gradient" />
       {/* Main Headline */}
       <div className="max-w-4xl w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-9 sm:leading-10 md:leading-12 lg:leading-tight text-neutral-700 font-dm-sans">
@@ -110,8 +110,8 @@ export default function HeroSection() {
       </div>
 
       {/* Blurred gradient background - starts after buttons, covers full screen */}
-      <div className="absolute inset-x-0 top-[60%] sm:top-[55%] md:top-[30%] bottom-0 -z-10 bg-hero-secondary-gradient" />
-      <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
+      <div className="absolute inset-0 top-[60%] sm:top-[55%] md:top-[30%] bottom-0 z-10 bg-hero-secondary-gradient" />
+      <div className="absolute inset-x-0 bottom-0 h-48 z-10 pointer-events-none bg-hero-white-fade" />
 
       <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
         {/* Background gradient */}

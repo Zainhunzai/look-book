@@ -184,24 +184,10 @@ export default function Page() {
 
   return (
     <div className="relative overflow-hidden">
-        {/* White fade at top to blend with body background */}
-        <div
-        className="absolute inset-x-0 top-0 h-48 -z-10 pointer-events-none"
-        style={{
-          background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 55%, #FFFFFF 100%)",
-        }}
-      />
 
       {/* Gradient Background Layer */}
       <div
-        className="absolute inset-0 pointer-events-none -z-10"
-        style={{
-          background: "linear-gradient(38deg, var(--purple-300, #C4B5FD) 44.13%, var(--red-300, #FDA4AF) 67.45%)",
-          opacity: 0.21,
-          filter: "blur(125px)",
-          zIndex: -1,
-        }}
-      />
+        className="absolute inset-0 pointer-events-none top-5 z-10 bg-contact-us-gradient"/>
 
     
       {/* White fade at bottom to blend with body background */}
@@ -376,6 +362,7 @@ export default function Page() {
             </Button>
           </form>
         </div>
+        <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
         <ReadyForBooking />
       </div>
     </div>
