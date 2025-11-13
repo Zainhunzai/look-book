@@ -154,7 +154,7 @@ export default function Navbar() {
             </li>
             <Button
               variant="outline"
-              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent"
+              className="px-6 py-3 cursor-pointer text-white text-lg font-rethink-sans font-semibold leading-6 hover:text-white/90 bg-transparent overflow-hidden"
               style={{
                 borderRadius: "16px",
                 border: "1px solid var(--Temp-UntitledStyle, #000)",

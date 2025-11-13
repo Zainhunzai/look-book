@@ -36,17 +36,9 @@ function LookAndBook() {
 
           <div className="space-y-3 relative pt-4">
             {/* Gradient Background */}
-            <div
-              className="absolute inset-0 -z-10 rounded-2xl"
-              style={{
-                background: "linear-gradient(300deg, rgba(166, 103, 255, 0.70) 42.2%, rgba(255, 0, 123, 0.70) 64.76%)",
-                opacity: 0.7,
-                filter: "blur(125px)",
-                transform: "scale(1.2)",
-              }}
-            />
+            <div className="absolute inset-0 bottom-20 left-0 right-0 -z-10 rounded-2xl bg-pricing-gradient"/>
 
-            {/* Mobile Cards */}
+            {/* Mobile Cards op*/}
             <div className="flex flex-col gap-4">
               {/* Card 1 - Annual Plan (Highlighted) */}
               <div className="relative bg-white border-2 border-purple-600 rounded-3xl p-5 shadow-lg">
@@ -113,18 +105,20 @@ function LookAndBook() {
             </div>
 
             {/* CTA Button */}
+            <div className="pb-12">
             <button className="w-full bg-purple-700 hover:bg-purple-800 active:bg-purple-800 text-white font-bold py-3 sm:py-4 px-5 sm:px-6 rounded-xl text-sm sm:text-base md:text-lg transition-colors duration-200 mt-3">
               Get the app now
             </button>
+            </div>
           </div>
         </div>
 
         {/* Desktop Layout - Hidden below lg */}
-        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center pb-22 container max-w-7xl mx-auto">
+        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-6 px-14 sm:gap-8 md:gap-10 lg:gap-32 items-center pb-22 container mx-auto">
           {/* Left Section */}
           <div className="space-y-5 sm:space-y-6 md:space-y-8">
             <div className="pb-3 sm:pb-4 text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-inter text-neutral-700 leading-tight sm:leading-snug md:leading-14 pb-3 sm:pb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-inter text-neutral-700 leading-14 pb-3 sm:pb-4">
                 Try Look & Book for Free
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-xl text-neutral-500 font-dm-sans font-normal leading-6 sm:leading-7 text-pretty">
@@ -288,16 +282,7 @@ function LookAndBook() {
           {/* Right Section - Pricing Cards */}
           <div className="space-y-3 sm:space-y-4 md:space-y-5 relative">
             {/* Gradient Background */}
-            <div
-              className="absolute inset-0 -z-10 rounded-2xl sm:rounded-3xl"
-              style={{
-                background:
-                  "linear-gradient(300deg, rgba(166, 103, 255, 0.70) 42.2%, rgba(255, 0, 123, 0.70) 64.76%)",
-                opacity: 0.7,
-                filter: "blur(125px)",
-                transform: "scale(1.2)",
-              }}
-            />
+            <div className="absolute inset-0 bottom-40 left-0 right-0 -z-10 bg-pricing-gradient"/>
             {/* Desktop Cards - Only visible on lg and above */}
             <div className="hidden lg:block space-y-3 sm:space-y-4 md:space-y-5">
               {/* Card 1 - Best Value */}

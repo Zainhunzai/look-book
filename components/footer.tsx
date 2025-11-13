@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 const socialLinks = [
   {
@@ -31,19 +32,21 @@ export function Footer() {
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12 lg:py-16 border-t">
         <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-between">
           {/* Left Section: Logo and Copyright */}
-          <p className="text-lg text-gray-600 hover:text-gray-900 transition-colors font-onest text-center block md:hidden pt-20 pb-3">
+          <p className="text-lg text-gray-600 hover:text-gray-900 transition-colors font-onest text-center block md:hidden pt-20">
             Look&Book lacus amet facilis amet neque nonsemper sed est tellus dolo ullamcorper vitae.
           </p>
-          <div className="flex flex-col gap-3 sm:gap-4 lg:gap-5 lg:max-w-xs">
+          <div className="flex flex-col gap-3 sm:gap-4 lg:gap-5 lg:max-w-xs justify-center items-center lg:justify-start lg:items-start">
             {/* Logo */}
-            <div>
-              <Image
-                src="/logo.svg"
-                alt="Look&Book"
-                width={190}
-                height={36}
-                className="pt-5"
-              />
+            <div className="pb-28 lg:pb-0">
+              <Link href="/">
+                <Image
+                  src="/logo.svg"
+                  alt="Look&Book"
+                  width={190}
+                  height={36}
+                  className="pt-0 lg:pt-5"
+                />
+              </Link>
             </div>
 
             <Separator className="block md:hidden" />
