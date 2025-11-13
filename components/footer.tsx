@@ -40,16 +40,16 @@ export function Footer() {
               <Image
                 src="/logo.svg"
                 alt="Look&Book"
-                width={160}
-                height={34}
-                className="sm:w-44 sm:h-9 md:w-48 md:h-10 lg:w-48 lg:h-10 mx-auto md:mx-0 pb-28"
+                width={190}
+                height={36}
+                className="pt-5"
               />
             </div>
 
             <Separator className="block md:hidden" />
 
             {/* Copyright */}
-            <p className="hidden md:block text-xs sm:text-sm md:text-base pt-8 sm:pt-12 md:pt-14 lg:pt-16 text-gray-600 font-dm-sans leading-normal sm:leading-relaxed">
+            <p className="hidden md:block max-w-[296px] text-xs sm:text-sm md:text-base pt-8  sm:pt-12 md:pt-14 lg:pt-16 text-gray-600 font-dm-sans leading-normal sm:leading-relaxed">
               © 2025 Look and Book. Patent Pending. All rights reserved.
             </p>
           </div>

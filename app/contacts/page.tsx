@@ -362,7 +362,6 @@ export default function Page() {
             </Button>
           </form>
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-48 -z-10 pointer-events-none bg-hero-white-fade" />
         <ReadyForBooking />
       </div>
     </div>
