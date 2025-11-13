@@ -36,7 +36,7 @@ function LookAndBook() {
 
           <div className="space-y-3 relative pt-4">
             {/* Gradient Background */}
-            <div className="absolute inset-0 bottom-20 left-0 right-0 -z-10 rounded-2xl bg-pricing-gradient"/>
+            <div className="absolute inset-0 bottom-0 left-0 right-0 -z-10 rounded-2xl bg-pricing-gradient"/>
 
             {/* Mobile Cards op*/}
             <div className="flex flex-col gap-4">

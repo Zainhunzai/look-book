@@ -115,7 +115,7 @@ export default function HeroSection() {
 
       <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
         {/* Background gradient */}
-        <div className="absolute bottom-0 -z-20 lg:bottom-0 w-full max-w-[350px] md:max-w-[350px] lg:max-w-[502px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px] bg-hero-phone-gradient pointer-events-none" />
+        <div className="absolute bottom-90 -z-20 lg:bottom-0 w-full max-w-[450px] md:max-w-[350px] lg:max-w-[502px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px] bg-hero-phone-gradient pointer-events-none" />
         {/* Phone image */}
         <Image
           src="/phone-desktop.png"

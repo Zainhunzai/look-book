@@ -209,8 +209,6 @@
   border-radius: 156px;
   background: linear-gradient(90deg, rgba(255, 0, 123, 0.70) 22.86%, #8B44FF 88.67%);
   filter: blur(120px);
-  width: 207px;
-  height: 134px;
 }
 
 /* Hero Section Gradients */
@@ -260,9 +258,6 @@
   background: linear-gradient(300deg, rgba(166, 103, 255, 0.70) 42.2%, rgba(255, 0, 123, 0.70) 64.76%);
   opacity: 0.7;
   filter: blur(125px);
-  width: 601px;
-  height: 330px;
-  flex-shrink: 0;
 }
 
 .bg-color {
