@@ -17,7 +17,7 @@ export default function HeroSection() {
             </span>
             on
           </div>
-          <div className="pl-32">
+          <div className="pr-10 md:pr-0 pl-0 md:pl-32 text-center md:text-left">
             <span className="inline-flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
               <Image src="/line.svg" alt="Your" width={200} height={34} className="w-52 hidden md:flex" />
             </span>

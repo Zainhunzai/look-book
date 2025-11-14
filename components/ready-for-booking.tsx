@@ -51,9 +51,9 @@ export function ReadyForBooking() {
               height={21}
               className="w-16 sm:w-20 md:w-28 lg:w-36 xl:w-44 h-auto hidden md:block"
             />
-            <span className="p-px text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold relative overflow-hidden whitespace-nowrap rounded-[16px]">
+            <span className="px-3 py-1 text-white text-3xl lg:text-4xl xl:text-5xl font-bold relative overflow-hidden whitespace-nowrap rounded-[16px]">
               <span className="absolute inset-0 bg-ready-booking-gradient z-0" />
-              <span className="relative z-10">booking?</span>
+              <span className="relative z-10 ">booking?</span>
             </span>
             <Image
               src="/line.svg"
