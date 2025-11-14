@@ -264,6 +264,14 @@
   background: var(--backgrounds-bg-component, #FAFAFA);
 }
 
+/* footer gradient */
+.bg-footer-gradient {
+  background: linear-gradient(90deg, rgba(255, 0, 123, 0.70) 2.37%, #8B44FF 107.91%);
+  opacity: 0.6;
+  filter: blur(120px);
+}
+
+
 /* React Phone Input 2 Custom Styles */
 .phone-input-container {
   width: 100%;
@@ -310,15 +318,17 @@
   background-color: #eff6ff;
   color: #2563eb;
 }
-.selected-flag{
+
+.selected-flag {
   background-color: transparent !important;
   outline: none !important;
   border: none !important;
 }
 
-.selected-flag.phone-button{
+.selected-flag.phone-button {
   border-right: none !important;
 }
+
 .flag-dropdown.phone-button[style] {
   border-right: none !important;
   border: none !important;

@@ -29,15 +29,13 @@ export function Footer() {
   return (
     <footer className="w-full bg-white">
       {/* Main Footer Content */}
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12 lg:py-16 border-t">
+      <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb lg:py-16">
+        <div className="bg-footer-gradient w-[207px] h-[67px] z-20 absolute -top-18 left-0 translate-y-1/2 translate-x-1/2" />
+        <div className="border-t">
         <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-between">
-          {/* Left Section: Logo and Copyright */}
-          <p className="text-lg text-gray-600 hover:text-gray-900 transition-colors font-onest text-center block md:hidden pt-20">
-            Look&Book lacus amet facilis amet neque nonsemper sed est tellus dolo ullamcorper vitae.
-          </p>
           <div className="flex flex-col gap-3 sm:gap-4 lg:gap-5 lg:max-w-xs justify-center items-center lg:justify-start lg:items-start">
             {/* Logo */}
-            <div className="pb-28 lg:pb-0">
+            <div className="hidden md:block pb-28 lg:pb-0">
               <Link href="/">
                 <Image
                   src="/logo.svg"
@@ -48,8 +46,6 @@ export function Footer() {
                 />
               </Link>
             </div>
-
-            <Separator className="block md:hidden" />
 
             {/* Copyright */}
             <p className="hidden md:block max-w-[296px] text-xs sm:text-sm md:text-base pt-8  sm:pt-12 md:pt-14 lg:pt-16 text-gray-600 font-dm-sans leading-normal sm:leading-relaxed">
@@ -142,6 +138,7 @@ export function Footer() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </footer>

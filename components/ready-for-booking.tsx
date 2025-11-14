@@ -98,9 +98,9 @@ export function ReadyForBooking() {
           href="https://apps.apple.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-900 text-white px-4 hover:bg-neutral-600 hover:scale-105 hover:shadow-lg hover:shadow-neutral-600/50 active:scale-95 transition-all duration-300 ease-in-out cursor-pointer relative z-30"
+          className="group flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-900 text-white px-7 md:px-4 hover:bg-neutral-600 hover:scale-105 hover:shadow-lg hover:shadow-neutral-600/50 active:scale-95 transition-all duration-300 ease-in-out cursor-pointer relative z-30"
         >
-      <Image src="/appleicon.svg" alt="App Store" width={36} height={36} className="transition-transform duration-300 group-hover:scale-110" />
+          <Image src="/appleicon.svg" alt="App Store" width={36} height={36} className="transition-transform duration-300 group-hover:scale-110" />
 
           <div className="text-left w-full">
             <p className="text-xs md:text-sm font-semibold w-full">

@@ -126,13 +126,15 @@ export default function BookingSale() {
         </div>
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           {/* Sun icon */}
-          <div className="flex justify-center mb-3 sm:mb-4">
+          {/* <div className="flex justify-center mb-3 sm:mb-4">
             <Image src="/sun.svg" alt="Booking Sale" width={60} height={34} className="sm:w-20 sm:h-11 md:w-21 md:h-12" />
-          </div>
+          </div> */}
 
           {/* Badge */}
-          <div className="inline-block bg-red-400 text-white px-2 py-1.5 sm:py-2 rounded-lg text-lg sm:text-xl md:text-2xl font-medium leading-4 font-inter mb-6 sm:mb-7 md:mb-8">
-            LOOK&BOOK
+          <div className="w-fit mx-auto bg-gradient-primary text-white px-2 py-1.5 sm:py-2 rounded-lg text-lg sm:text-xl md:text-2xl font-medium leading-4 font-inter mb-6 sm:mb-7 md:mb-8">
+            <p>
+              LOOK&BOOK
+            </p>
           </div>
 
           {/* Main content heading */}
