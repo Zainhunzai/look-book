@@ -69,7 +69,7 @@ export default function HeroSection() {
         {/* App Store Button */}
         <Button
           onClick={() => window.open('https://apps.apple.com/', '_blank', 'noopener,noreferrer')}
-          className="group flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-900 text-white px-4 hover:bg-neutral-600 hover:scale-105 hover:shadow-lg hover:shadow-neutral-600/50 active:scale-95 transition-all duration-300 ease-in-out cursor-pointer relative z-30"
+          className="group flex items-center justify-center gap-3 w-[191px] h-[67px] rounded-2xl border bg-neutral-900 text-white px-7 md:px-4 hover:bg-neutral-600 hover:scale-105 hover:shadow-lg hover:shadow-neutral-600/50 active:scale-95 transition-all duration-300 ease-in-out cursor-pointer relative z-30"
         >
          <Image src="/appleicon.svg" alt="App Store" width={36} height={36} className="transition-transform duration-300 group-hover:scale-110" />
 
@@ -90,7 +90,7 @@ export default function HeroSection() {
 
       <div className="container mx-auto relative flex justify-center pt-16 sm:pt-0 md:pt-32 px-4">
         {/* Background gradient */}
-        <div className="absolute bottom-90 -z-20 lg:bottom-0 w-full max-w-[400px] md:max-w-[350px] lg:max-w-[502px] h-[400px] sm:h-[600px] md:h-[750px] lg:h-[874px] bg-hero-phone-gradient pointer-events-none" />
+        <div className="absolute bottom-80 -z-20 lg:bottom-0 w-full max-w-[400px] md:max-w-[350px] lg:max-w-[502px] h-[350px] sm:h-[600px] md:h-[750px] lg:h-[874px] bg-hero-phone-gradient pointer-events-none" />
         {/* Phone image */}
         <Image
           src="/phone-desktop.png"

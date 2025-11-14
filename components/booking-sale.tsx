@@ -148,7 +148,7 @@ export default function BookingSale() {
             </div>
             <div className="text-left">
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <span className="text-base sm:text-lg leading-5 sm:leading-6 font-medium text-netural-primary">Amitya Ingram</span>
+                <span className="text-base sm:text-lg leading-5 sm:leading-6 font-medium text-netural-primary">Amiya Ingram</span>
                 <Image src="/bluetick.svg" alt="Check" width={16} height={16} className="sm:w-5 sm:h-5" />
               </div>
               <p className="text-xs sm:text-sm leading-5 sm:leading-6 font-normal text-netural-primary">Founder & CEO</p>
