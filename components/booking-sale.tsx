@@ -136,13 +136,13 @@ export default function BookingSale() {
           </div>
 
           {/* Main content heading */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-onest leading-7 sm:leading-8 md:leading-9 lg:leading-11 font-medium text-netural-primary mb-6 sm:mb-7 md:mb-8 text-pretty px-2">
+          <h2 className="text-xl sm:text-2xl font-onest max-w-2xl mx-auto leading-7 font-medium text-netural-primary mb-6 sm:mb-7 md:mb-8 text-pretty px-2">
             Book your perfect salon appointment in seconds. From haircuts to spa treatments, discover trusted salons
             near you with real reviews and instant booking.
           </h2>
 
           {/* Testimonial */}
-          <div className="flex items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-14 md:mb-16">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-14 md:mb-16 pt-10">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-linear-to-br from-pink-400 to-purple-500 shrink-0">
               <img src="/amiya.png" alt="Amitya Ingram" height={48} width={48} className="sm:w-16 sm:h-16" />
             </div>
@@ -156,8 +156,8 @@ export default function BookingSale() {
           </div>
 
           {/* CTA Section */}
-          <div className="max-w-3xl mx-auto px-2">
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-6 sm:leading-7 md:leading-8 text-netural-secondary font-dm-sans pb-5 sm:pb-6 md:pb-7">Ready to transform your salon business? Contact us today and let's discuss how Nearz can help you grow.</p>
+          <div className="max-w-lg mx-auto px-2">
+            <p className="text-base sm:text-lg font-normal leading-6 text-netural-secondary font-dm-sans pb-5 sm:pb-6 md:pb-7">Ready to transform your salon business? Contact us today and let's discuss how Nearz can help you grow.</p>
             <Button
               asChild
               className="w-full sm:w-11/12 md:w-4/5 lg:w-3/5 bg-purple-primary hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors"
