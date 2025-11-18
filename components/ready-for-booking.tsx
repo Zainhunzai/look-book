@@ -28,7 +28,7 @@ export function ReadyForBooking() {
 
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 py-12 sm:py-16 md:py-20 bg-white">
+    <section className="flex flex-col items-center justify-center px-4 py-20 bg-white">
       {/* Main Heading Section */}
       <div className="w-full max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-12">
         <h1 className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-2 sm:gap-2.5 md:gap-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-dm-sans text-center text-neutral-800 px-2">

@@ -29,9 +29,8 @@ export function Footer() {
   return (
     <footer className="w-full bg-white">
       {/* Main Footer Content */}
-      <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb lg:py-16">
+      <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t">
         <div className="bg-footer-gradient w-[207px] h-[67px] z-20 absolute -top-18 left-0 translate-y-1/2 translate-x-1/2" />
-        <div className="border-t">
         <div className="flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-8 lg:gap-12 xl:gap-16 justify-between">
           <div className="flex flex-col gap-3 sm:gap-4 lg:gap-5 lg:max-w-xs justify-center items-center lg:justify-start lg:items-start">
             {/* Logo */}
@@ -140,7 +139,6 @@ export function Footer() {
           </div>
         </div>
         </div>
-      </div>
     </footer>
   );
 }
